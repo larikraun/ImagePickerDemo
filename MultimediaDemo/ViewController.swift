@@ -43,6 +43,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     
     }*/
+    /**
+    this is a callback that informs the UIImagePickerControllerDelegate that an image was picked
+    **/
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let img = info[UIImagePickerControllerEditedImage] as! UIImage
         iv.image = img
